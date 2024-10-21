@@ -1,10 +1,18 @@
-import React from 'react'
-import { AddTaskForm } from '../AddTaskForm/AddTaskForm'
+import { useSelector } from "react-redux";
+import { AddTaskForm } from "../AddTaskForm/AddTaskForm";
+import { Task } from "./Task/Task";
+import { RootState } from "../../app/store";
 
 export const Todolist = () => {
+  const tasks = useSelector((state: RootState) => state.tasks.tasks);
   return (
     <div>
-      <AddTaskForm/>
+      <AddTaskForm />
+      <ul>
+        {tasks.map((task) => {
+          return <Task key={task.id} task={task} />;
+        })}
+      </ul>
     </div>
-  )
-}
+  );
+};
