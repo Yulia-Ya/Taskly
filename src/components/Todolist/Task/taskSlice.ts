@@ -21,8 +21,14 @@ export const slice = createSlice({
       };
       state.tasks.unshift(newTask);
     },
-  },
+    changeTaskStatus:( state, action: PayloadAction<{id: number}>) =>{
+        const task = state.tasks.find(t=> t.id === action.payload.id)
+        if(task){
+          task.completed =!task.completed
+        }
+  }
+}
 });
 
-export const { addTask } = slice.actions;
+export const { addTask, changeTaskStatus } = slice.actions;
 export const tasksReducer = slice.reducer;
