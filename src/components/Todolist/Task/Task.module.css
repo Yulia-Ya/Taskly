@@ -24,11 +24,13 @@ input[type="checkbox"]:checked::after {
   border: solid #5db160;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
+    text-transform: capitalize;
 }
 
 .task_title {
   text-decoration: line-through;
   opacity: 0.5;
+
 }
 
 .task {
@@ -36,4 +38,6 @@ input[type="checkbox"]:checked::after {
   align-items: center;
   padding: 5px;
   border-bottom: 1px solid #ededed;
+  text-transform: capitalize;
+
 }

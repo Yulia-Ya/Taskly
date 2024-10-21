@@ -23,4 +23,6 @@
 
 .todos_form_wrapper{
   display: flex;
+  border-bottom: 1px solid #dcdbdb ;
+  padding: 10px 0px;
 }

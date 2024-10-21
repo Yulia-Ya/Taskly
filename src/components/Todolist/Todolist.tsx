@@ -29,7 +29,6 @@ export const Todolist = () => {
 
   return (
     <div className={styles.todos_wrapper}>
-      {/* <button onClick={() => setOpen(!open)}>Acc</button> */}
       <div className={styles.todos_form_wrapper}>
       <Button onClick={() => setOpen(!open)}>
         <FontAwesomeIcon icon={faAngleDown}/>
