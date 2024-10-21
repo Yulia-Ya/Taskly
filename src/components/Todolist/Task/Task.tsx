@@ -1,6 +1,7 @@
 import React from "react";
 import { changeTaskStatus, TaskProps } from "./taskSlice";
-import { useAppDispatch } from "../../common/hooks/useAppDispatch";
+import { useAppDispatch } from "../../../common/hooks/useAppDispatch";
+import styles from "./Task.module.css";
 type Props = {
   task: TaskProps;
 };
@@ -12,9 +13,9 @@ export const Task = ({ task }: Props) => {
     dispatch(changeTaskStatus({ id }));
   };
   return (
-    <li>
-      <input type="checkbox" checked={completed} onClick={toggleHandler} />
-      <span>{title}</span>
+    <li className={styles.task}>
+      <input type="checkbox" checked={completed} onChange={toggleHandler}/>
+      <span className={completed ? styles.task_title : "none"}>{title}</span>
     </li>
   );
 };

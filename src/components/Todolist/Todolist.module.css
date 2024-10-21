@@ -1,0 +1,26 @@
+.todos_wrapper {
+  max-width: 500px;
+  margin: 10px auto;
+  padding: 12px 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: white;
+}
+
+.tasks_list {
+  list-style: none;
+  padding: 0;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.bottom span {
+  font-size: 12px;
+  padding: 5px 10px;
+  margin: 0 3px;
+}
+
+.todos_form_wrapper{
+  display: flex;
+}

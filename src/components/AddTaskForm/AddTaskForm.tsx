@@ -1,6 +1,7 @@
 import { ChangeEvent, KeyboardEvent, useState } from "react";
-import { useAppDispatch } from "../common/hooks/useAppDispatch";
+import { useAppDispatch } from "../../common/hooks/useAppDispatch";
 import { addTask } from "../Todolist/Task/taskSlice";
+import styles from "./AddTaskForm.module.css";
 
 export const AddTaskForm = () => {
   const [title, setTitle] = useState("");
@@ -9,7 +10,6 @@ export const AddTaskForm = () => {
 
   const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
     setTitle(e.currentTarget.value);
-    console.log(title);
   };
 
   const onKeyPressHandler = (e: KeyboardEvent<HTMLInputElement>) => {
@@ -21,6 +21,7 @@ export const AddTaskForm = () => {
 
   return (
     <input
+      className={styles.form_wrapper}
       type="text"
       placeholder="What needs to be done?"
       value={title}
