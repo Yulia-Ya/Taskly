@@ -1,4 +1,21 @@
-# Getting Started with Create React App
+# Taskly
+
+A simple and efficient To-Do List application built with React, Redux Toolkit, and TypeScript.
+Easily manage your daily tasks, track progress, and stay organized.
+
+`Features`
+
+##### Add, edit, and delete tasks
+##### Mark tasks as completed
+##### Filter tasks (all, completed, active)
+##### Built with React, Redux Toolkit, and TypeScript for scalability
+
+`Screenshot`
+
+<img width="599" alt="todo" src="https://github.com/user-attachments/assets/735285ae-ac0e-4c38-afaa-bd0196ace82e" />
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
